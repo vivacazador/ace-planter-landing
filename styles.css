@@ -389,3 +389,59 @@ footer {
     font-size: 0.875rem;
     color: #4b5563;
 }
+/* Distributors page styles */
+.distributors-hero {
+    background-color: #f3f4f6;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.distributors-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.distributors-list {
+    background-color: #fff;
+    padding: 4rem 0;
+}
+
+.distributors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.distributor-card {
+    background-color: #f3f4f6;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.distributor-card h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #111827;
+}
+
+.distributor-card p {
+    margin-bottom: 0.5rem;
+    color: #4b5563;
+}
+
+.distributor-card strong {
+    color: #111827;
+}
+
+@media (max-width: 768px) {
+    .distributors-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .distributors-grid {
+        grid-template-columns: 1fr;
+    }
+}
