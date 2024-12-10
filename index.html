@@ -8,102 +8,109 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="min-h-screen bg-gray-100">
-        <header class="bg-black text-white shadow-md">
-            <nav class="container mx-auto px-6 py-4">
-                <div class="flex justify-between items-center">
-                    <div class="text-2xl font-bold text-white">Ace Planters</div>
-                    <div class="hidden md:flex space-x-6">
-                        <a href="#features" class="text-gray-300 hover:text-red-500 transition duration-300">Product Features</a>
-                        <a href="#sales" class="text-gray-300 hover:text-red-500 transition duration-300">Sales</a>
-                        <a href="#service" class="text-gray-300 hover:text-red-500 transition duration-300">Customer Service</a>
+    <div class="page-wrapper">
+        <header>
+            <nav>
+                <div class="nav-container">
+                    <div class="logo">Ace Planters</div>
+                    <div class="nav-links">
+                        <a href="#features">Product Features</a>
+                        <a href="#sales">Sales</a>
+                        <a href="#service">Customer Service</a>
                     </div>
                 </div>
             </nav>
         </header>
 
         <main>
-            <section class="relative h-screen flex items-center justify-center overflow-hidden">
-                <video autoplay loop muted playsinline class="absolute z-0 w-auto min-w-full min-h-full max-w-none">
-                    <source src="/placeholder.svg?height=1080&width=1920" type="video/mp4">
+            <section class="hero">
+                <video autoplay loop muted playsinline>
+                    <source src="https://placehold.co/1920x1080.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <div class="z-10 text-center text-white bg-black bg-opacity-50 p-8 rounded-lg">
-                    <h1 class="text-5xl font-bold mb-4">Ace Planters</h1>
-                    <p class="text-xl mb-8">Simple. Durable. Efficient.</p>
-                    <a href="products.html" class="bg-red-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-red-700 transition duration-300 inline-flex items-center">
+                <div class="hero-content">
+                    <h1>Ace Planters</h1>
+                    <p>Simple. Durable. Efficient.</p>
+                    <a href="products.html" class="cta-button">
                         Discover Our Products
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
                         </svg>
                     </a>
                 </div>
             </section>
 
-            <section id="features" class="py-20 bg-white">
-                <div class="container mx-auto px-6">
-                    <h2 class="text-3xl font-bold text-center mb-12 text-black">Product Features</h2>
-                    <div class="grid md:grid-cols-3 gap-8">
-                        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-red-600 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                            </svg>
-                            <h3 class="text-xl font-semibold mb-2 text-black">Built to Last</h3>
-                            <p class="text-gray-700">Designed for years of reliable service with minimal maintenance.</p>
+            <section id="features" class="features">
+                <div class="section-container">
+                    <h2>Product Features</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"/>
+                                    <line x1="8" y1="12" x2="16" y2="12"/>
+                                </svg>
+                            </div>
+                            <h3>Built to Last</h3>
+                            <p>Designed for years of reliable service with minimal maintenance.</p>
                         </div>
-                        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-red-600 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                            </svg>
-                            <h3 class="text-xl font-semibold mb-2 text-black">Precision Planting</h3>
-                            <p class="text-gray-700">Advanced sensors ensure accurate seed placement for optimal crop yield.</p>
+                        <div class="feature-card">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                                </svg>
+                            </div>
+                            <h3>Precision Planting</h3>
+                            <p>Advanced sensors ensure accurate seed placement for optimal crop yield.</p>
                         </div>
-                        <div class="bg-gray-100 p-6 rounded-lg shadow-md">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-red-600 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                            </svg>
-                            <h3 class="text-xl font-semibold mb-2 text-black">Easy Maintenance</h3>
-                            <p class="text-gray-700">Simple design allows for quick and easy maintenance and repairs.</p>
+                        <div class="feature-card">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="3"/>
+                                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                                </svg>
+                            </div>
+                            <h3>Easy Maintenance</h3>
+                            <p>Simple design allows for quick and easy maintenance and repairs.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section id="sales" class="py-20 bg-gray-200">
-                <div class="container mx-auto px-6">
-                    <h2 class="text-3xl font-bold text-center mb-12 text-black">Sales</h2>
-                    <div class="bg-white p-8 rounded-lg shadow-md">
-                        <h3 class="text-2xl font-semibold mb-4 text-black">Find an Ace Planters Distributor</h3>
-                        <p class="mb-6 text-gray-700">Our network of authorized distributors ensures you get the best service and support for your Ace Planter.</p>
-                        <div class="grid md:grid-cols-3 gap-4">
-                            <div>
-                                <h4 class="font-semibold text-black">Midwest Region</h4>
-                                <ul class="list-disc list-inside text-gray-700">
+            <section id="sales" class="sales">
+                <div class="section-container">
+                    <h2>Sales</h2>
+                    <div class="sales-content">
+                        <h3>Find an Ace Planters Distributor</h3>
+                        <p>Our network of authorized distributors ensures you get the best service and support for your Ace Planter.</p>
+                        <div class="distributors-grid">
+                            <div class="region">
+                                <h4>Midwest Region</h4>
+                                <ul>
                                     <li>Heartland Ag Solutions</li>
                                     <li>Prairie Equipment Co.</li>
                                 </ul>
                             </div>
-                            <div>
-                                <h4 class="font-semibold text-black">Southern Region</h4>
-                                <ul class="list-disc list-inside text-gray-700">
+                            <div class="region">
+                                <h4>Southern Region</h4>
+                                <ul>
                                     <li>Southern Farm Supplies</li>
                                     <li>Gulf Coast Planters</li>
                                 </ul>
                             </div>
-                            <div>
-                                <h4 class="font-semibold text-black">Western Region</h4>
-                                <ul class="list-disc list-inside text-gray-700">
+                            <div class="region">
+                                <h4>Western Region</h4>
+                                <ul>
                                     <li>Pacific Ag Equipment</li>
                                     <li>Mountain States Machinery</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="mt-8 text-center">
-                            <a href="distributors.html" class="bg-red-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-red-700 transition duration-300 inline-flex items-center">
+                        <div class="cta-container">
+                            <a href="distributors.html" class="cta-button">
                                 Contact Sales
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
                                 </svg>
                             </a>
                         </div>
@@ -111,36 +118,36 @@
                 </div>
             </section>
 
-            <section id="service" class="py-20 bg-black text-white">
-                <div class="container mx-auto px-6">
-                    <h2 class="text-3xl font-bold text-center mb-12">Customer Service</h2>
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div>
-                            <h3 class="text-2xl font-semibold mb-4">Support Hours</h3>
-                            <p class="mb-2">Monday - Friday: 8:00 AM - 6:00 PM CST</p>
+            <section id="service" class="service">
+                <div class="section-container">
+                    <h2>Customer Service</h2>
+                    <div class="service-grid">
+                        <div class="service-info">
+                            <h3>Support Hours</h3>
+                            <p>Monday - Friday: 8:00 AM - 6:00 PM CST</p>
                             <p>Saturday: 9:00 AM - 2:00 PM CST</p>
                         </div>
-                        <div>
-                            <h3 class="text-2xl font-semibold mb-4">Contact Information</h3>
-                            <p class="mb-2">Phone: 1-800-ACE-PLANT</p>
-                            <p class="mb-2">Email: support@aceplanters.com</p>
+                        <div class="service-info">
+                            <h3>Contact Information</h3>
+                            <p>Phone: 1-800-ACE-PLANT</p>
+                            <p>Email: support@aceplanters.com</p>
                             <p>Address: 1234 Ag Tech Lane, Farmville, USA 12345</p>
                         </div>
                     </div>
-                    <div class="mt-12">
-                        <h3 class="text-2xl font-semibold mb-4 text-center">Frequently Asked Questions</h3>
-                        <div class="bg-gray-900 p-6 rounded-lg">
-                            <details class="mb-4">
-                                <summary class="font-semibold cursor-pointer">How often should I service my Ace Planter?</summary>
-                                <p class="mt-2 text-gray-300">We recommend a full service check before each planting season and regular maintenance as outlined in your user manual.</p>
-                            </details>
-                            <details class="mb-4">
-                                <summary class="font-semibold cursor-pointer">What's covered under the warranty?</summary>
-                                <p class="mt-2 text-gray-300">Our standard warranty covers all manufacturing defects for 2 years from the date of purchase. Extended warranties are available.</p>
+                    <div class="faq">
+                        <h3>Frequently Asked Questions</h3>
+                        <div class="faq-list">
+                            <details>
+                                <summary>How often should I service my Ace Planter?</summary>
+                                <p>We recommend a full service check before each planting season and regular maintenance as outlined in your user manual.</p>
                             </details>
                             <details>
-                                <summary class="font-semibold cursor-pointer">How can I order replacement parts?</summary>
-                                <p class="mt-2 text-gray-300">Replacement parts can be ordered through our online store or by contacting your local Ace Planters distributor.</p>
+                                <summary>What's covered under the warranty?</summary>
+                                <p>Our standard warranty covers all manufacturing defects for 2 years from the date of purchase. Extended warranties are available.</p>
+                            </details>
+                            <details>
+                                <summary>How can I order replacement parts?</summary>
+                                <p>Replacement parts can be ordered through our online store or by contacting your local Ace Planters distributor.</p>
                             </details>
                         </div>
                     </div>
@@ -148,12 +155,12 @@
             </section>
         </main>
 
-        <footer class="bg-gray-900 text-white py-8">
-            <div class="container mx-auto px-6 text-center">
+        <footer>
+            <div class="footer-content">
                 <p>&copy; 2023 Ace Planters. All rights reserved.</p>
-                <div class="mt-4">
-                    <a href="privacy-policy.html" class="text-gray-400 hover:text-red-500 mx-2 transition duration-300">Privacy Policy</a>
-                    <a href="#" class="text-gray-400 hover:text-red-500 mx-2 transition duration-300">Terms of Service</a>
+                <div class="footer-links">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
                 </div>
             </div>
         </footer>
